@@ -18,9 +18,6 @@ folder the source code for the app can be found. The first file to take a closer
 look at is `routes.js`. That file sets up the different routes we can visit
 in the app. Because this is only a small assignment only one route is defined.
 That route will show the page that is defined in the file at `src/pages/newTask.js`.
-It is in this file you will do most of your coding! This is where we want you
-to implement the assignment.
-
 
 ## The assignment
 As part of booking a new task a category, date and time has to be selected.
