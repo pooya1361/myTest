@@ -35,5 +35,11 @@ the icons for the categories can be found in the folder `public/img/`.
 
 ![screen](screen.png)
 
+## What are we looking for?
+* You do not need to make the complete solution (i.e. it looks great on all screens, works on all phones etc) - just make sure it works somewhere
+* Make it look nice, if you want to get creative and make up your own design go ahead (not required!)
+* Focus on the structure of the code & try to use some of the nice features in ES6 and React
+* think about what your portfolio and previous experiences show - If you have some beautiful pages focus on making the code nice and structured. If you are more of a back-end profile, show that you can make something pretty
+
 Good Luck and please contact us if you have any questions or problems!
 gustav@yepstr.com and filip@yepstr.com
