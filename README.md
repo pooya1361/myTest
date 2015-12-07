@@ -42,8 +42,8 @@ the icons for the categories can be found in the folder `public/img/`.
 * think about what your portfolio and previous experiences show - If you have some beautiful pages focus on making the code nice and structured. If you are more of a back-end profile, show that you can make something pretty
 
 ### What to avoid
-* Avoid using jquery and angular, it kind of defeats the purpose of using reactjs :)
-* 
+* Avoid using jquery and angular, it kind of defeats the purpose of using reactjs
+* Regular CSS in the baseCSS.js file. Instead use inline CSS as specified in the example file
 
 Good Luck and please contact us if you have any questions or problems!
 gustav@yepstr.com and filip@yepstr.com
