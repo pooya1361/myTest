@@ -1,14 +1,13 @@
-import injectTapEventPlugin from 'react-tap-event-plugin';
-injectTapEventPlugin();
+import React from 'react';
+import ReactDOMServer from 'react-dom/server';
 
-const React = require('react');
-require('../setup');
+import Html from './html';
 
-const Html = require('./html');
-
-function App(req, res) {
-  const html = React.renderToStaticMarkup(<Html title="yepstr"/>);
-  res.send('<!DOCTYPE html>' + html);
+function App(request, response) {
+  const html = ReactDOMServer.renderToStaticMarkup(
+    <Html title="Yepstr" />
+  );
+  response.send('<!DOCTYPE html>' + html);
 }
 
 export default App;

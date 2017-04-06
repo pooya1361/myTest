@@ -1,13 +1,20 @@
 import injectTapEventPlugin from 'react-tap-event-plugin';
 injectTapEventPlugin();
 
-require('../setup');
-const React = require('react');
-const Router = require('react-router');
-const routes = require('../routes');
+
+import React from 'react';
+import ReactDom from 'react-dom';
+import { Router } from 'react-router';
+
+import '../setup';
+import routes from './routes/rootRoute';
+import history from './routes/history';
 
 if (typeof window !== 'undefined') {
-  Router.run(routes, Router.HistoryLocation, (Handler, state) => {
-    React.render(<Handler params={state.params}/>, document.getElementById('app'));
-  });
+  ReactDom.render((
+    <Router
+      history={ history }
+      routes={ routes }
+    />
+  ), document.getElementById('app'));
 }

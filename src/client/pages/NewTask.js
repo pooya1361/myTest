@@ -1,11 +1,10 @@
 import React from 'react';
-import StyleSheet from 'react-style';
 
-const styles = StyleSheet.create({
+const styles = {
   wrapper: {
     padding: '30px',
   },
-});
+};
 
 class NewTask extends React.Component {
   render() {
