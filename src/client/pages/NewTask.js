@@ -6,14 +6,12 @@ const styles = {
   },
 };
 
-class NewTask extends React.Component {
-  render() {
-    return (
-      <div style={ styles.wrapper }>
-        Create a new Task
-      </div>
-    );
-  }
-}
+const NewTask = () => {
+  return (
+    <div style={ styles.wrapper }>
+      Create a new Task
+    </div>
+  );
+};
 
 export default NewTask;
