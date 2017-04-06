@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 const css = `
 
 * {
@@ -33,8 +33,9 @@ html {
 }
 
 `;
-export default class BaseCss extends Component {
-  render() {
-    return <style dangerouslySetInnerHTML={{__html: css }} />;
-  }
-}
+
+const BaseCss = () => {
+  return <style dangerouslySetInnerHTML={ { __html: css } } />; // eslint-disable-line react/no-danger
+};
+
+export default BaseCss;
