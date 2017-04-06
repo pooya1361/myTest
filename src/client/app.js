@@ -1,7 +1,3 @@
-import injectTapEventPlugin from 'react-tap-event-plugin';
-injectTapEventPlugin();
-
-
 import React from 'react';
 import ReactDom from 'react-dom';
 import { Router } from 'react-router';
