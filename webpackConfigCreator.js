@@ -64,10 +64,6 @@ function makeConfig(options) {
       name: 'vendor',
       path: path.join(__dirname, 'node_modules')
     },
-    {
-      name: 'assets',
-      path: path.join(__dirname, 'assets')
-    }
   ], { manifest: 'app-manifest' }));
 
   /** /Plugins **/
