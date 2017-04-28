@@ -40,7 +40,7 @@ the icons for the categories can be found in the folder `public/img/`.
 * Focus on the structure of the code & try to use some of the nice features in ES6 and React
 
 ### Hand in
-Open a PR at the https://github.com/Yepstr/yepstr-codeassignment repo with your solution.
+Fork the repository and open a PR at the https://github.com/Yepstr/yepstr-codeassignment repo with your solution.
 
 Good Luck and please contact us if you have any questions or problems!
 gustav@yepstr.com
