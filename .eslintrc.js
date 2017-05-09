@@ -1,6 +1,6 @@
 module.exports = {
   'extends': [
-    'yepstr',
+    '@yepstr/eslint-config-yepstr',
   ],
   'globals': {
     '__CLIENT__': true,
