@@ -16,37 +16,47 @@ const styles = {
     borderTop: '2px solid #E0E0E0',
     fontSize: '120%',
   },
-  menu: {
-    display: 'flex',
-    flexDirection: 'row',
-    flex: '1',
-    maxWidth: '100%',
-    flexWrap: 'wrap',
-
-  },
-  menuItem: {
-    display: 'flex',
-    width: '33.3%',
-    minWidth: '180px',
-    height: '200px',
+  textFieldContainer: {
     backgroundColor: 'white',
-    border: '2px solid #E0E0E0',
-    boxSizing: 'border-box',
-    flexGrow: 1,
-    justifyContent: 'center',    
+    display: 'flex',
+    justifyContent: 'flex-start',
+    padding: '40px 64px',
+    flex: '1',
+    borderTop: '2px solid #E0E0E0',
+    //alignItems: ''
     flexDirection: 'column',
-    alignItems: 'center',
   },
-  menuTitle: {
-    fontWeight: 'bold',
-    textAlign: 'center',
-    marginTop: '16px',
-    
+  caption: {
+    color: 'grey',
+    fontSize: '120%',
+    margin: '8px 0px',
   },
+  input: {
+    fontSize: '140%',
+    border: 'none',
+    borderBottom: '2px solid black',
+    marginBottom: '32px',
+  }
+
 };
 
-const NewTask = () => {
-  return (
+function getDateFormatted() {
+  var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+  var d = new Date();
+  var dayName = days[d.getDay()];
+  return dayName + ', ' + d.getDate() + ' ' + monthNames[d.getMonth()] + ' ' + d.getFullYear();
+};
+
+function getCurrentTime() {
+  var d = new Date();
+  return d.getHours().toString()+'.'+d.getMinutes().toString();
+}
+
+class NewTask extends React.Component {
+    render() {
+        return (
     <div style={styles.wrapper}>
       <div style={styles.section}>
         <span>Välj kategori</span>
@@ -55,10 +65,18 @@ const NewTask = () => {
       <CategoryList />
 
       <div style={styles.section}>
-        <span>Valj kategori</span>
+        <span>Uppdragsinformation</span>
       </div>
+
+      <div style={styles.textFieldContainer}>
+        <span style={styles.caption}>Datum</span>
+        <input style={styles.input} type="text" value={getDateFormatted()} />
+        <span style={styles.caption}>Tid</span>
+        <input style={styles.input} type="text" value={getCurrentTime()} />
+      </div>
+
     </div>
-  );
+  )}
 };
 
 export default NewTask;
